@@ -1,16 +1,6 @@
-# Compiled class file
+# ===== Java / SpringBoot 后端 =====
 *.class
-
-# Log file
 *.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
 *.jar
 *.war
 *.nar
@@ -18,7 +8,43 @@
 *.zip
 *.tar.gz
 *.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+.mtj.tmp/
+.ctxt
+
+# maven 编译产物（适配backend子目录）
+backend/target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# ===== Vue / Vite 前端 =====
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# 编辑器缓存
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 环境变量（重要，防止密钥提交）
+.env
+.env.local
+.env.*.local
+
+# 后端本地私有配置（带数据库账号密码，不上传仓库）
+backend/src/main/resources/application-local.yml
+backend/src/main/resources/application-dev.yml
+backend/src/main/resources/application-prod.yml
+
+# SQL备份文件
+*.sql.bak
