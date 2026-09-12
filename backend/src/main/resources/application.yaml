@@ -1,8 +1,16 @@
+#禁止修改本文件
+#禁止修改本文件
+#禁止修改本文件
+#禁止修改本文件
+#禁止修改本文件
 spring:
-  datasource:
-    url: jdbc:mysql://127.0.0.1:3307/aitutor?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
-    username: root
-    password: 123456
+  profiles:
+    active: dev
+
 mybatis:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+# 跨域允许源，多个地址逗号分隔
+cors:
+  allow-origins: http://localhost:5173,http://localhost:5174
